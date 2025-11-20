@@ -6,8 +6,8 @@ function CabeceraCV() {
 
       <ul>
         <li>📍 Medellín, Colombia</li>
-        <li>📞 300 000 0000</li>
-        <li>📧 maicol@example.com</li>
+        <li>📞 3244534659</li>
+        <li>📧 kingofthieves465@gmail.com</li>
       </ul>
     </header>
   );
