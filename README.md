@@ -79,6 +79,94 @@ GitHub
 
 El desarrollo de este proyecto permitió aplicar de manera práctica conceptos fundamentales de React, especialmente la creación y organización de componentes. También se fortaleció el uso de Git y GitHub para el control de versiones, garantizando un trabajo ordenado y con trazabilidad. Esta actividad sirve como base para continuar con ejercicios más avanzados en las siguientes guías, asegurando un aprendizaje progresivo y bien estructurado.
 
+README – EV06: Componentes Dinámicos en React
+
+Proyecto: cv-react-maicol-posada
+
+1. Descripción del ejercicio
+
+En esta actividad se desarrollaron componentes dinámicos utilizando renderizado condicional y renderizado de listas en React. El objetivo principal fue construir secciones del currículum (CV) digital que respondieran al contenido del arreglo de datos y a condiciones lógicas del programa, reforzando el manejo del método map(), operadores ternarios y estilos aplicados según las tecnologías.
+
+El enfoque del ejercicio se centra en la construcción de una interfaz organizada, modular y fácil de escalar. Cada componente fue creado siguiendo buenas prácticas y registrando su avance mediante commits descriptivos en GitHub.
+
+2. Componentes creados en esta evidencia
+2.1. Experiencia.jsx
+
+Se creó un arreglo con 10 experiencias laborales y proyectos.
+
+Cada item contiene:
+
+Cargo
+
+Empresa
+
+Año
+
+Descripción breve
+
+Se implementó renderizado dinámico con .map().
+
+2.2. Educacion.jsx
+
+Se construyó un arreglo con estudios, cursos, talleres y formaciones complementarias.
+
+Cada elemento incluye:
+
+Institución
+
+Nombre del curso
+
+Año
+
+Renderizado dinámico mediante listas.
+
+2.3. StackTecnologias.jsx
+
+Se replicó el ejemplo del tutorial visto en clase.
+
+Cada tecnología se representa con una etiqueta estilizada, que cambia de color según la categoría o tipo.
+
+Se aplicó:
+
+Renderizado condicional
+
+Estructura visual organizada
+
+Listas generadas con .map()
+
+3. Instrucciones para ejecutar el proyecto
+
+Para visualizar el proyecto en tu entorno local:
+
+Clonar el repositorio:
+
+git clone https://github.com/tu-usuario/cv-react-maicol-posada.git
+
+
+Instalar dependencias:
+
+npm install
+
+
+Ejecutar el proyecto:
+
+npm run dev
+
+
+Abrir el navegador y acceder a:
+
+http://localhost:5173/
+
+4. Captura del resultado final
+
+![pantallaso EV06](src/assets/pantallaso_EV06.png)
+
+
+5. Conclusión
+
+Esta evidencia permitió fortalecer la comprensión del renderizado condicional y la generación dinámica de contenido en React. El desarrollo de los componentes a partir de arreglos y la integración de estilos condicionales aportó una estructura más organizada, escalable y profesional al CV digital.
+Además, la práctica constante con Git y GitHub garantizó una correcta trazabilidad del código y del proceso de construcción.
+
 7. Autor
 
 Maicol Esneider Posada Callejas
