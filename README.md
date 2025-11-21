@@ -167,6 +167,111 @@ http://localhost:5173/
 Esta evidencia permitió fortalecer la comprensión del renderizado condicional y la generación dinámica de contenido en React. El desarrollo de los componentes a partir de arreglos y la integración de estilos condicionales aportó una estructura más organizada, escalable y profesional al CV digital.
 Además, la práctica constante con Git y GitHub garantizó una correcta trazabilidad del código y del proceso de construcción.
 
+README – EV07: Reutilización de Componentes en React con Props y Desestructuración
+
+Proyecto: cv-react-maicol-posada
+
+1. Descripción del ejercicio
+
+En esta actividad se amplió el proyecto del CV digital construido anteriormente, integrando el uso de props y desestructuración para convertir los componentes en elementos reutilizables, dinámicos y más profesionales. El objetivo principal fue centralizar la información del currículum en un archivo independiente (cvData.js) y enviar estos datos como propiedades hacia cada componente del proyecto.
+
+Este enfoque permite mejorar la escalabilidad, el orden y la mantenibilidad del código, facilitando la separación de responsabilidades y el uso correcto de la arquitectura recomendada en React.
+
+2. Componentes actualizados con Props
+
+Durante la actividad se implementaron cuatro componentes principales que ahora reciben su información desde App.jsx mediante props:
+
+2.1. CabeceraCV.jsx
+
+Recibe:
+
+nombre
+
+cargo
+
+ciudad
+
+contacto
+
+Se aplicó desestructuración directamente en los parámetros.
+
+2.2. Perfil.jsx
+
+Recibe:
+
+resumen
+
+Se implementó un componente limpio y reutilizable.
+
+2.3. Experiencia.jsx
+
+Recibe:
+
+lista (arreglo con experiencias laborales y proyectos)
+
+Se trabajó con el método .map() para mostrar dinámicamente cada experiencia.
+
+2.4. Educacion.jsx
+
+Recibe:
+
+lista (arreglo con estudios, cursos y formaciones)
+
+Implementación dinámica con desestructuración de props.
+
+2.5. StackTecnologias.jsx (del EV06 pero adaptado también a props)
+
+Recibe:
+
+lista con tecnologías.
+
+Se conservaron los estilos condicionales para diferenciar cada tecnología por color.
+
+3. Estructura del Proyecto
+
+Los datos del CV se almacenan en el archivo:
+
+src/cvData.js
+
+
+Y son importados en App.jsx, donde se envían como props a cada componente.
+
+Esto mejora la organización y evita tener datos “quemados” dentro de los componentes.
+
+4. Instrucciones para ejecutar el proyecto
+
+Para visualizar el proyecto en tu entorno local:
+
+Clonar el repositorio
+
+git clone https://github.com/tu-usuario/cv-react-maicol-posada.git
+
+
+Instalar dependencias
+
+npm install
+
+
+Ejecutar el proyecto
+
+npm run dev
+
+
+Abrir el navegador en
+
+http://localhost:5173/
+
+5. Capturas de pantalla del proyecto
+
+![pantallasoEV07](src/assets/pantallaso#1_EV07.png)
+
+![pantallasoEV07](src/assets/pantallaso#2_EV07.png)
+
+6. Conclusión
+
+La actividad EV07 permitió estructurar un proyecto React más modular, limpio y escalable. El uso de props y desestructuración facilitó que cada componente cumpliera una única responsabilidad, separando la lógica de los datos y permitiendo una actualización más sencilla del CV.
+Además, los commits organizados documentaron el progreso paso a paso, reforzando las buenas prácticas en control de versiones.
+
 7. Autor
 
 Maicol Esneider Posada Callejas
