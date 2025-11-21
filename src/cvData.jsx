@@ -22,11 +22,15 @@ export const estudios = [
 ];
 
 export const tecnologias = [
-    "JavaScript",
+  "JavaScript",
   "React",
+  "Node.js",
   "HTML",
   "CSS",
-  "Node.js",
   "Git",
-  "GitHub"
+  "GitHub",
+  "Vite",
+  "Figma",
+  "Firebase"
 ];
+
