@@ -6,7 +6,8 @@ export const datosPersonales = {
 };
 
 export const perfilProfesional =
-  "Soy un aprendiz en desarrollo, con conocimientos en React, lógica y construcción de interfaces.";
+  "Soy un aprendiz apasionado por el desarrollo de software, con interés en programación front-end, React y buenas prácticas de diseño. Me gusta aprender rápido, trabajar en equipo y crear interfaces claras y funcionales.";
+
 
 export const experiencias = [
   { cargo: "Frontend Jr", empresa: "TechNova", periodo: "2022 - 2023" },
