@@ -21,7 +21,7 @@ export const estudios = [
 ];
 
 export const tecnologias = [
-  "JavaScript",
+    "JavaScript",
   "React",
   "HTML",
   "CSS",
