@@ -263,9 +263,9 @@ http://localhost:5173/
 
 5. Capturas de pantalla del proyecto
 
-![pantallasoEVO7](src/assets/pantallaso#1_EV07.png)
+![pantallasoEVO7](src/assets/pantallaso1_EV07.png)
 
-![pantallasoEVO7](src/assets/pantallaso#2_EV07.png)
+![pantallasoEVO7](src/assets/pantallaso2_EV07.png)
 
 6. Conclusión
 
