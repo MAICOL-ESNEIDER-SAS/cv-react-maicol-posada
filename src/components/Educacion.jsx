@@ -1,19 +1,23 @@
-function Educacion({ lista }) {
+function Educacion({ estudios }) {
+  if (!estudios || estudios.length === 0) {
+    return <p>No hay información académica para mostrar.</p>;
+  }
+
   return (
     <section>
       <h2>Formación Académica</h2>
-
-      {lista.map((est, index) => (
-        <div key={index}>
-          <h3>{est.curso}</h3>
-          <p><strong>Institución:</strong> {est.institucion}</p>
-          <p><strong>Año:</strong> {est.año}</p>
-        </div>
-      ))}
+      <ul>
+        {estudios.map((edu, i) => (
+          <li key={i}>
+            <strong>{edu.curso}</strong> – {edu.institucion} ({edu.año})
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
 
 export default Educacion;
+
 
 
