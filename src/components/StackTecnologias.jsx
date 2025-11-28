@@ -36,3 +36,4 @@ function StackTecnologias({ tecnologias }) {
 }
 
 export default StackTecnologias;
+
