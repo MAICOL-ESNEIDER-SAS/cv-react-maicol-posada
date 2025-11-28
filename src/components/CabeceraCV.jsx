@@ -1,4 +1,4 @@
-function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
+function CabeceraCV({ nombre, cargo, ciudad, telefono, correo }) {
   return (
     <header>
       <h1>{nombre}</h1>
@@ -6,10 +6,12 @@ function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
 
       <ul>
         <li>📍 {ciudad}</li>
-        <li>📞 {contacto}</li>
+        <li>📞 {telefono}</li>
+        <li>📧 {correo}</li>
       </ul>
     </header>
   );
 }
 
 export default CabeceraCV;
+
