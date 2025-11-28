@@ -263,14 +263,138 @@ http://localhost:5173/
 
 5. Capturas de pantalla del proyecto
 
-![pantallasoEV07](src/assets/pantallaso#1_EV07.png)
+![pantallasoEVO7](src/assets/pantallaso#1_EV07.png)
 
-![pantallasoEV07](src/assets/pantallaso#2_EV07.png)
+![pantallasoEVO7](src/assets/pantallaso#2_EV07.png)
 
 6. Conclusión
 
 La actividad EV07 permitió estructurar un proyecto React más modular, limpio y escalable. El uso de props y desestructuración facilitó que cada componente cumpliera una única responsabilidad, separando la lógica de los datos y permitiendo una actualización más sencilla del CV.
 Además, los commits organizados documentaron el progreso paso a paso, reforzando las buenas prácticas en control de versiones.
+
+README – EV08: CV Dinámico con Interactividad (React)
+
+Proyecto: cv-react-maicol
+Actividad: GA1-220501096-03-AA1-EV08
+Tema: Eventos, estado local e interactividad en React
+
+1. Descripción del ejercicio
+
+En esta actividad se integraron eventos y manejo de estado local (useState) dentro del proyecto de hoja de vida construido previamente.
+El objetivo fue agregar interactividad real al CV, permitiendo que el usuario:
+
+Muestre u oculte la sección de habilidades.
+
+Agregue nuevas tecnologías al stack mediante un formulario controlado.
+
+Actualice la interfaz de manera dinámica sin recargar la página.
+
+Cada funcionalidad se desarrolló paso a paso y se dejó registrada en commits independientes para garantizar un control de versiones claro y organizado.
+
+2. Funcionalidades implementadas
+✔ ToggleHabilidades.jsx
+
+Componente que contiene un botón para mostrar u ocultar las habilidades.
+
+Recibe las props mostrar y onToggle.
+
+Se utiliza un renderizado condicional para controlar la visibilidad.
+
+✔ Habilidades.jsx
+
+Sección que aparece o desaparece según el estado local.
+
+Se renderiza solo cuando mostrarHabilidades === true.
+
+✔ FormularioTecnologia.jsx
+
+Formulario controlado con estado interno.
+
+Permite agregar nuevas tecnologías al CV.
+
+Usa eventos onChange y onSubmit.
+
+✔ Manejo del estado en App.jsx
+
+En App.jsx se implementó:
+
+Estado global para tecnologias.
+
+Estado para mostrarHabilidades.
+
+Función agregarTecnologia() para actualizar el stack dinámicamente.
+
+Función toggleHabilidades() para controlar la visibilidad.
+
+✔ StackTecnologias.jsx actualizado
+
+Ahora recibe las tecnologías como props.
+
+Mapea el arreglo y las muestra dinámicamente.
+
+Actualiza automáticamente cuando se agrega una nueva tecnología.
+
+3. Instrucciones para ejecutar el proyecto
+1️⃣ Instalar dependencias
+npm install
+
+2️⃣ Ejecutar el proyecto
+npm run dev
+
+3️⃣ Abrir en el navegador
+http://localhost:5173/
+
+4. Capturas del proyecto
+
+
+Formulario funcionando
+![cv_navegador](src/assets/pantallaso_cv_nabegador.png)
+
+Habilidades mostrándose y ocultándose
+![alt text](src/assets/pantallaso_de_botones.png)
+![botones](src/assets/pantallao_de_los_botones_funcionando_y_con_una_nueva_tecnologia_agregada.png)
+
+Stack de tecnologías después de agregar una nueva
+![alt text](src/assets/pantallao_de_los_botones_funcionando_y_con_una_nueva_tecnologia_agregada.png)
+
+5. Commits realizados (EV08)
+
+chore: organización inicial del proyecto para integración de eventos
+
+feat: creación de componente ToggleHabilidades con renderizado condicional
+
+feat: implementación de useState para mostrar/ocultar habilidades
+
+feat: creación de componente FormularioTecnologia con inputs controlados
+
+feat: función agregarTecnologia en App.jsx y paso como prop
+
+feat: renderizado dinámico de tecnologías desde el estado
+
+docs: actualización del README con funcionalidades de eventos y estados
+
+6. Estado actual del proyecto
+
+El CV ahora es totalmente dinámico, modular y reactivo.
+El proyecto incluye:
+
+Componentes reutilizables
+
+Props y desestructuración
+
+Estados locales
+
+Eventos y funciones manejadoras
+
+Renderizado condicional
+
+Listas dinámicas
+
+Formulario controlado
+
+Buenas prácticas en React
+
+
 
 7. Autor
 
