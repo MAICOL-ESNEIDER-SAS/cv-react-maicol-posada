@@ -1,5 +1,5 @@
-README – EV04: Construcción Inicial del CV en React
-CV React – Evidencia EV04
+CV README – EV04: Construcción Inicial del CV en React
+ – Evidencia EV04
 
 Aprendiz: Maicol Esneider Posada Callejas
 Programa: Análisis y Desarrollo de Software – SENA

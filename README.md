@@ -29,127 +29,148 @@ A lo largo del desarrollo se implementaron:
 git clone <URL-DE-TU-REPOSITORIO>
 2.2. Acceder al proyecto
 
-bash
+
 cd cv-react-maicol-posada
 2.3. Instalar dependencias
 
-bash
+
 npm install
 2.4. Ejecutar servidor local
 
-bash
+
 npm run dev
 2.5. Abrir en el navegador
 
 Código
 http://localhost:5173/
-3. Evidencias (EV04 – EV08)
-3.1. EV04 – Estructura inicial del proyecto
+```
+## 3. Evidencias (EV04 – EV08)
+### 3.1. EV04 – EV05 Estructura inicial del proyecto
 Durante esta fase se construyó la base del proyecto y se agregaron los componentes iniciales, cada uno registrado con su respectivo commit.
 
-Componentes creados:
+### Componentes creados:
 
-CabeceraCV.jsx
+-CabeceraCV.jsx
 
-Perfil.jsx
+-Perfil.jsx
 
-Experiencia.jsx
+-Experiencia.jsx
 
-Educacion.jsx
+-Educacion.jsx
 
-App.jsx
+-App.jsx
 
 Estos representan la estructura fundamental del CV.
 
-3.2. EV06 – Componentes dinámicos
+## Evidencia visual del EV04 - EV05: 
+
+![EVO4](documentacion/img/pantallaso_cv_navegador_EVO4.png)
+
+![EVO5](documentacion/img/pantallaso_estructura_visual_EVO5.png)
+
+## 3.2. EV06 – Componentes dinámicos
 Se implementó el renderizado dinámico mediante arreglos y el método map().
 
-Componentes desarrollados:
+### Componentes desarrollados:
 
-Experiencia.jsx → contiene diez experiencias laborales o proyectos con renderizado dinámico.
+-Experiencia.jsx → contiene diez experiencias laborales o proyectos con renderizado dinámico.
 
-Educacion.jsx → lista de estudios, cursos y formaciones implementada con map().
+-Educacion.jsx → lista de estudios, cursos y formaciones implementada con map().
 
-StackTecnologias.jsx → tecnologías mostradas mediante etiquetas estilizadas, con colores asignados según tipo y renderizado condicional.
+-StackTecnologias.jsx → tecnologías mostradas mediante etiquetas estilizadas, con colores asignados según tipo y renderizado condicional.
 
-Evidencia visual del EV06: (agregar captura aquí)
+## Evidencia visual del EV06: 
 
-3.3. EV07 – Reutilización mediante Props y Desestructuración
+![EVO6](documentacion/img/pantallaso_EV06.png)
+
+## 3.3. EV07 – Reutilización mediante Props y Desestructuración
 En esta evidencia se reorganizó el proyecto para hacerlo completamente modular mediante el uso de props.
 
-Actualizaciones realizadas:
+### Actualizaciones realizadas:
 
-Se creó el archivo cvData.js, encargado de almacenar todos los datos del CV.
+-Se creó el archivo cvData.js, encargado de almacenar todos los datos del CV.
 
-Se enviaron los datos desde App.jsx hacia los componentes mediante props.
+-Se enviaron los datos desde App.jsx hacia los componentes mediante props.
 
-Componentes actualizados:
+-Componentes actualizados:
 
-CabeceraCV.jsx → recibe nombre, cargo, ciudad y contacto.
+-CabeceraCV.jsx → recibe nombre, cargo, ciudad y contacto.
 
-Perfil.jsx → recibe el resumen profesional.
+-Perfil.jsx → recibe el resumen profesional.
 
-Experiencia.jsx → recibe una lista de experiencias.
+-Experiencia.jsx → recibe una lista de experiencias.
 
-Educacion.jsx → recibe un arreglo de estudios.
+-Educacion.jsx → recibe un arreglo de estudios.
 
-StackTecnologias.jsx → recibe un arreglo con tecnologías.
+-StackTecnologias.jsx → recibe un arreglo con tecnologías.
 
-Evidencia visual del EV07: (agregar capturas aquí)
+## Evidencia visual del EV07: 
 
-3.4. EV08 – Interactividad con eventos y manejo de estado
+![EVO7-1](documentacion/img/pantallaso1_EV07.png)
+
+![EVO7-2](documentacion/img/pantallaso2_EV07.png)
+
+## 3.4. EV08 – Interactividad con eventos y manejo de estado
 En esta etapa el proyecto se volvió interactivo, incorporando estados locales y globales.
 
-Funciones agregadas:
+### Funciones agregadas:
 
-Mostrar y ocultar la sección de habilidades.
+-Mostrar y ocultar la sección de habilidades.
 
-Agregar nuevas tecnologías mediante un formulario controlado.
+-Agregar nuevas tecnologías mediante un formulario controlado.
 
-Actualización instantánea sin recargar la página.
+-Actualización instantánea sin recargar la página.
 
-Componentes creados:
+### Componentes creados:
 
-ToggleHabilidades.jsx → botón para mostrar/ocultar habilidades.
+-ToggleHabilidades.jsx → botón para mostrar/ocultar habilidades.
 
-Habilidades.jsx → muestra lista de habilidades cuando el estado está activo.
+-Habilidades.jsx → muestra lista de habilidades cuando el estado está activo.
 
-FormularioTecnologia.jsx → formulario controlado que permite agregar nuevas tecnologías al stack.
+-FormularioTecnologia.jsx → formulario controlado que permite agregar nuevas tecnologías al stack.
 
-Actualizaciones en App.jsx:
+-Actualizaciones en App.jsx:
 
-Implementación de estados mediante useState.
+-Implementación de estados mediante useState.
 
-Funciones agregarTecnologia() y toggleHabilidades().
+-Funciones agregarTecnologia() y toggleHabilidades().
 
-Renderizado condicional dinámico.
+-Renderizado condicional dinámico.
 
-Evidencias visuales del EV08: (agregar capturas aquí)
+## Evidencias visuales del EV08: 
 
-4. Tecnologías Utilizadas
-Tecnología	Uso principal
-React	Construcción de componentes
-JavaScript	Lógica y funciones
-Vite	Entorno de desarrollo rápido
-Git	Control de versiones
-GitHub	Repositorio remoto
-5. Capturas del Proyecto
-(Agregar todas las capturas correspondientes a cada EV aquí)
+![EVO8-1](documentacion/img/pantallaso_cv_nabegador_EVO8.png)
 
-6. Conclusiones Generales
-El desarrollo de este CV digital permitió:
+![EVO8-2](documentacion/img/pantallao_de_los_botones_funcionando_EVO8.png)
 
-Comprender cómo estructurar proyectos React basados en componentes.
+## 4. Tecnologías Utilizadas
+### Tecnología	Usada principalmente 
 
-Aplicar props, estado local, renderizado condicional y listas dinámicas.
+-React	Construcción de componentes
 
-Implementar eventos y formularios controlados.
+-JavaScript	Lógica y funciones
 
-Construir una interfaz escalable y fácil de mantener.
+-Vite	Entorno de desarrollo rápido
 
-Documentar progresivamente el proyecto mediante commits organizados.
+-Git	Control de versiones
 
-Resultado: este proyecto se convierte en una base sólida para continuar con trabajos más avanzados en React.
+-GitHub	Repositorio remoto
 
-7. Autor
+## 5. Conclusiones Generales
+
+### El desarrollo de este CV digital permitió:
+
+-Comprender cómo estructurar proyectos React basados en componentes.
+
+-Aplicar props, estado local, renderizado condicional y listas dinámicas.
+
+-Implementar eventos y formularios controlados.
+
+-Construir una interfaz escalable y fácil de mantener.
+
+-Documentar progresivamente el proyecto mediante commits organizados.
+
+-Resultado: este proyecto se convierte en una base sólida para continuar con trabajos más avanzados en React.
+
+## 6. Autor
 Maicol Esneider Posada Callejas Aprendiz ADSO – SENA 
