@@ -44,7 +44,7 @@ npm run dev
 Código
 http://localhost:5173/
 ```
-## 3. Evidencias (EV04 – EV08)
+## 3. Evidencias (EV04 – EV08 y EV09 de diseño por gusto personal)
 ### 3.1. EV04 – EV05 Estructura inicial del proyecto
 Durante esta fase se construyó la base del proyecto y se agregaron los componentes iniciales, cada uno registrado con su respectivo commit.
 
@@ -143,6 +143,67 @@ En esta etapa el proyecto se volvió interactivo, incorporando estados locales y
 
 ![EVO8-2](documentacion/img/pantallao_de_los_botones_funcionando_EVO8.png)
 
+## 3.5. EV09 – Actualización de datos y rediseño visual una preferencia personal no espesificada en la guia
+
+En esta evidencia se realizó una **optimización completa del proyecto**, enfocada en:
+
+### Objetivos principales:
+- **Actualización de datos reales** en el archivo `cvData.js`:
+  - Nombre, cargo, ubicación y correo.
+  - Perfil profesional redactado para transmitir confianza.
+  - Experiencias laborales, estudios, habilidades y tecnologías relevantes.
+- **Rediseño visual futurista**:
+  - Aplicación de **glassmorphism**, gradientes y efectos modernos.
+  - Paleta oscura con acentos neón.
+  - Layout responsivo con Flexbox y Grid.
+- **Centrado del contenido y eliminación de bordes blancos** para una visualización más profesional.
+- **Responsividad completa** para móviles y tablets.
+- **Eliminación del componente `FormularioTecnologia.jsx`**:
+  - Se consideró innecesario para una hoja de vida profesional.
+  - No cumplía con la guía del proyecto.
+  - Se priorizó la simplicidad y la presentación estática.
+
+---
+
+### Actualizaciones realizadas:
+- Reorganización de `App.jsx` con estructura semántica.
+- Ajustes en `index.css` para:
+  - Centrar el contenido.
+  - Eliminar bordes blancos.
+  - Aplicar diseño futurista.
+- Componentes optimizados para recibir datos mediante props.
+- Responsividad para pantallas pequeñas y tablets.
+
+---
+
+### Componentes finales:
+- **CabeceraCV.jsx** → muestra nombre, cargo, ciudad y correo.
+- **Perfil.jsx** → perfil profesional y fortalezas.
+- **Experiencia.jsx** → lista de experiencias laborales.
+- **Educacion.jsx** → lista de estudios.
+- **StackTecnologias.jsx** → tecnologías con chips estilizados.
+- **ToggleHabilidades.jsx** → botón para mostrar/ocultar habilidades.
+- **Habilidades.jsx** → lista de habilidades destacadas.
+
+---
+
+### Evidencias visuales del EV09:
+
+![Captura 1 futurista EV09](documentacion/img/Captura_1_EV09.png)
+
+![Captura 2 futurista EV09](documentacion/img/Captura_2_EV09.png)
+
+![Captura 3 futurista EV09](documentacion/img/Captura_3_EV09.png)
+
+![Captura 4 futurista EV09](documentacion/img/Captura_4_EV09.png)
+
+La evidencia EV09 consolidó el proyecto como una **hoja de vida digital profesional, moderna y responsiva**, cumpliendo con los siguientes objetivos:
+
+- Presentación clara y atractiva.
+- Diseño coherente con tendencias actuales.
+- Eliminación de funcionalidades innecesarias.
+- Preparación del proyecto para ser publicado como portafolio personal.
+
 ## 4. Tecnologías Utilizadas
 ### Tecnología	Usada principalmente 
 
@@ -155,6 +216,8 @@ En esta etapa el proyecto se volvió interactivo, incorporando estados locales y
 -Git	Control de versiones
 
 -GitHub	Repositorio remoto
+
+-CSS    Diseño y creatividad
 
 ## 5. Conclusiones Generales
 
@@ -171,6 +234,7 @@ En esta etapa el proyecto se volvió interactivo, incorporando estados locales y
 -Documentar progresivamente el proyecto mediante commits organizados.
 
 -Resultado: este proyecto se convierte en una base sólida para continuar con trabajos más avanzados en React.
+
 
 ## 6. Autor
 Maicol Esneider Posada Callejas Aprendiz ADSO – SENA 
