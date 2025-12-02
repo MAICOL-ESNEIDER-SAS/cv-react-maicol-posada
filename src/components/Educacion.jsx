@@ -1,23 +1,33 @@
-function Educacion({ estudios }) {
-  if (!estudios || estudios.length === 0) {
-    return <p>No hay información académica para mostrar.</p>;
-  }
 
+
+// src/components/Educacion.jsx
+function Educacion({ estudios = [] }) {
   return (
-    <section>
-      <h2>Formación Académica</h2>
-      <ul>
-        {estudios.map((edu, i) => (
-          <li key={i}>
-            <strong>{edu.curso}</strong> – {edu.institucion} ({edu.año})
-          </li>
-        ))}
-      </ul>
-    </section>
+    <div>
+      <h2>Educación</h2>
+      {estudios.length > 0 ? (
+        <ul className="cards">
+          {estudios.map((ed, i) => (
+            <li key={i} className="card">
+              <div className="card-line" />
+              <div className="card-header">
+                <span className="title">{ed.institucion}</span>
+                <span className="subtitle">{ed.curso}</span>
+              </div>
+              <div className="card-body">
+                <span className="meta">{ed.año || "Año"}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="placeholder">Sin estudios registrados.</p>
+      )}
+    </div>
   );
 }
-
 export default Educacion;
+
 
 
 

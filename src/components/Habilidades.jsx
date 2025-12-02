@@ -1,16 +1,20 @@
-function Habilidades() {
+// src/components/Habilidades.jsx
+function Habilidades({ habilidades = [] }) {
   return (
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Trabajo en equipo</li>
-        <li>Aprendizaje rápido</li>
-        <li>Creatividad</li>
-        <li>Comunicación efectiva</li>
-      </ul>
-    </section>
+    <div>
+      <h3>Habilidades destacadas</h3>
+      {habilidades.length > 0 ? (
+        <ul className="chips chips-soft">
+          {habilidades.map((h, i) => (
+            <li key={i} className="chip soft">{h}</li>
+          ))}
+        </ul>
+      ) : (
+        <p className="placeholder">Sin habilidades registradas.</p>
+      )}
+    </div>
   );
 }
-
 export default Habilidades;
+
 

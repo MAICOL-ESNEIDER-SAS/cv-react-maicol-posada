@@ -66,3 +66,499 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Estilos globales */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.cv-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-header {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.cv-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #007acc;
+}
+
+.cv-header h2 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.cv-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cv-section {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.cv-section h2 {
+  margin-bottom: 10px;
+  color: #007acc;
+  font-size: 1.4rem;
+}
+
+.tecnologias span {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ===== Estilo Futurista para CV (Glassmorphism + Neon) ===== */
+
+/* Paleta y variables */
+:root {
+  --bg-dark: #0b0f1a;
+  --bg-gradient-start: #0b0f1a;
+  --bg-gradient-end: #151b2d;
+
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass-blur: 14px;
+
+  --accent: #00d4ff;
+  --accent-2: #7c3aed;
+  --accent-3: #00ffa1;
+
+  --text-primary: #e6eefc;
+  --text-secondary: #9aa7c7;
+  --heading: #cfe7ff;
+
+  --chip-bg: rgba(255,255,255,0.08);
+  --chip-border: rgba(255,255,255,0.2);
+
+  /* Tech-specific */
+  --tech-react: linear-gradient(135deg,#61dafb 0%,#38bdf8 100%);
+  --tech-js: linear-gradient(135deg,#f7df1e 0%,#f59e0b 100%);
+  --tech-ts: linear-gradient(135deg,#3178c6 0%,#60a5fa 100%);
+  --tech-html: linear-gradient(135deg,#e34c26 0%,#fb7185 100%);
+  --tech-css: linear-gradient(135deg,#2965f1 0%,#60a5fa 100%);
+  --tech-node: linear-gradient(135deg,#8cc84b 0%,#22c55e 100%);
+  --tech-tailwind: linear-gradient(135deg,#06b6d4 0%,#22d3ee 100%);
+}
+
+/* Fondo general */
+.cv-root {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(1200px circle at 10% 10%, #0f172a 0%, var(--bg-dark) 55%);
+  color: var(--text-primary);
+}
+.cv-bg-gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(600px circle at 20% 30%, rgba(0,212,255,0.12), transparent 60%),
+    radial-gradient(500px circle at 80% 70%, rgba(124,58,237,0.12), transparent 60%),
+    radial-gradient(400px circle at 50% 10%, rgba(0,255,161,0.1), transparent 60%);
+  pointer-events: none;
+}
+
+/* Tarjeta principal (glass) */
+.cv-container {
+  position: relative;
+  max-width: 1024px;
+  margin: 48px auto;
+  padding: 28px;
+  border-radius: 16px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+/* Cabecera */
+.cv-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed rgba(255,255,255,0.16);
+}
+.cabecera .nombre {
+  font-size: 2.2rem;
+  margin: 6px 0 0;
+  background: linear-gradient(90deg, var(--heading), #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cabecera .cargo {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 6px 0;
+}
+.cabecera .ubicacion {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+.cabecera .link { color: var(--accent); text-decoration: none; }
+.cabecera .link:hover { text-decoration: underline; }
+
+/* Avatar iniciales */
+.avatar {
+  width: 72px; height: 72px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(0,212,255,0.5), rgba(124,58,237,0.5));
+  display: grid; place-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+.avatar-initials {
+  font-weight: 800;
+  color: #0b0f1a;
+}
+
+/* Layout principal */
+.cv-main { display: flex; flex-direction: column; gap: 22px; }
+
+.cv-section {
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+}
+.cv-section h2, .cv-section h3 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+@media (max-width: 900px) {
+  .cv-grid { grid-template-columns: 1fr; }
+}
+
+.resumen { line-height: 1.75; color: var(--text-primary); }
+.placeholder { color: var(--text-secondary); font-style: italic; }
+
+/* Cards (experiencia/educación) con acento */
+.cards { list-style: none; padding: 0; margin: 0; }
+.card {
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  margin-bottom: 12px;
+}
+.card-line {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  border-radius: 3px 0 0 3px;
+}
+.card-header {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 10px;
+}
+.title { font-weight: 700; color: #fff; }
+.subtitle { color: var(--text-secondary); }
+.card-body { margin-top: 6px; }
+.meta { font-size: 0.9rem; color: var(--text-secondary); }
+
+/* Chips de tecnologías y habilidades */
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--chip-border);
+  background: var(--chip-bg);
+  color: #eaf2ff;
+  font-weight: 600;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 6px 16px rgba(0,0,0,0.35);
+}
+.chips-soft .chip.soft {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Toggle / botón principal */
+.toggle { display: flex; justify-content: center; }
+.btn-primary {
+  padding: 10px 18px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #0b0f1a;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(0,212,255,0.25);
+}
+.btn-primary:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 10px 26px rgba(124,58,237,0.24);
+}
+
+/* Envoltura interna para habilidades */
+.cv-section.inner {
+  background: rgba(255,255,255,0.06);
+  border-style: dashed;
+}
+
+/* ===== RESET GLOBAL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambia a center si quieres centrar verticalmente */
+  background: radial-gradient(1200px circle at 10% 10%, #0f172a 0%, #0b0f1a 55%);
+  color: #e6eefc;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.cv-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.cv-container {
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* ===== CABECERA ===== */
+.cv-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.16);
+}
+
+.cabecera .nombre {
+  font-size: 2.2rem;
+  margin: 6px 0 0;
+  background: linear-gradient(90deg, #cfe7ff, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cabecera .cargo {
+  font-size: 1.1rem;
+  color: #9aa7c7;
+  margin: 6px 0;
+}
+
+.cabecera .ubicacion {
+  font-size: 0.95rem;
+  color: #9aa7c7;
+}
+
+.cabecera .link {
+  color: #00d4ff;
+  text-decoration: none;
+}
+.cabecera .link:hover {
+  text-decoration: underline;
+}
+
+/* Avatar futurista */
+.avatar {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(0,212,255,0.5), rgba(124,58,237,0.5));
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+.avatar-initials {
+  font-weight: 800;
+  color: #0b0f1a;
+}
+
+/* ===== SECCIONES ===== */
+.cv-main {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.cv-section {
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cv-section h2,
+.cv-section h3 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: #cfe7ff;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/* RESPONSIVE GRID */
+@media (max-width: 900px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== TEXTO ===== */
+.resumen {
+  line-height: 1.75;
+  color: #e6eefc;
+}
+.placeholder {
+  color: #9aa7c7;
+  font-style: italic;
+}
+
+/* ===== TARJETAS (Experiencia/Educación) ===== */
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
+}
+.card-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #00d4ff, #7c3aed);
+  border-radius: 3px 0 0 3px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+.title {
+  font-weight: 700;
+  color: #fff;
+}
+.subtitle {
+  color: #9aa7c7;
+}
+.card-body {
+  margin-top: 6px;
+}
+.meta {
+  font-size: 0.9rem;
+  color: #9aa7c7;
+}
+
+/* ===== CHIPS (Tecnologías/Habilidades) ===== */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chip {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #eaf2ff;
+  font-weight: 600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== BOTÓN ===== */
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+.btn-primary {
+  padding: 10px 18px;
+  background: linear-gradient(90deg, #00d4ff, #7c3aed);
+  color: #0b0f1a;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(0, 212, 255, 0.25);
+}
+.btn-primary:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 10px 26px rgba(124, 58, 237, 0.24);
+}
+
+/* ===== RESPONSIVE TIPOGRAFÍA ===== */
+@media (max-width: 768px) {
+  .cabecera .nombre {
+    font-size: 1.8rem;
+  }
+  .cabecera .cargo {
+    font-size: 1rem;
+  }
+  .cv-container {
+    padding: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .cabecera .nombre {
+    font-size: 1.5rem;
+  }
+  .cabecera .cargo {
+    font-size: 0.9rem;
+  }
+  .cv-section {
+    padding: 12px;
+  }
+}

@@ -1,11 +1,14 @@
+// src/components/ToggleHabilidades.jsx
 function ToggleHabilidades({ mostrar, onToggle }) {
   return (
-    <button onClick={onToggle} style={{ margin: "20px 0" }}>
-      {mostrar ? "Ocultar Habilidades" : "Mostrar Habilidades"}
-    </button>
+    <div className="toggle">
+      <button className="btn-primary" onClick={onToggle}>
+        {mostrar ? "Ocultar habilidades" : "Mostrar habilidades"}
+      </button>
+    </div>
   );
 }
-
 export default ToggleHabilidades;
+
 
 

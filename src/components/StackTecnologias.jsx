@@ -1,39 +1,39 @@
-function StackTecnologias({ tecnologias }) {
-  // Función para asignar color según la tecnología
-  const getColor = (tech) => {
-    if (tech === "React") return "#61dafb";       // Azul React
-    if (tech === "JavaScript") return "#f7df1e";  // Amarillo JS
-    if (tech === "Node.js") return "#8cc84b";     // Verde Node
-    if (tech === "HTML") return "#e34c26";        // Naranja HTML
-    if (tech === "CSS") return "#2965f1";         // Azul CSS
 
-    // Color por defecto
-    return "#555";
+// src/components/StackTecnologias.jsx
+function StackTecnologias({ tecnologias = [] }) {
+  const getColor = (tech) => {
+    if (tech === "React") return "var(--tech-react)";
+    if (tech === "JavaScript") return "var(--tech-js)";
+    if (tech === "TypeScript") return "var(--tech-ts)";
+    if (tech === "HTML") return "var(--tech-html)";
+    if (tech === "CSS") return "var(--tech-css)";
+    if (tech === "Node.js") return "var(--tech-node)";
+    if (tech === "TailwindCSS") return "var(--tech-tailwind)";
+    return "var(--chip-bg)";
   };
 
   return (
-    <section>
-      <h2>Stack de Tecnologías</h2>
-
-      <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-        {tecnologias.map((tech, index) => (
-          <span
-            key={index}
-            style={{
-              padding: "8px 12px",
-              backgroundColor: getColor(tech),
-              color: tech === "JavaScript" ? "#000" : "#fff",
-              fontWeight: "bold",
-              borderRadius: "8px",
-            }}
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </section>
+    <div>
+      <h2>Tecnologías</h2>
+      {tecnologias.length > 0 ? (
+        <div className="chips">
+          {tecnologias.map((tech, i) => (
+            <span
+              key={i}
+              className="chip"
+              style={{ background: getColor(tech) }}
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      ) : (
+        <p className="placeholder">Sin tecnologías registradas.</p>
+      )}
+    </div>
   );
 }
-
 export default StackTecnologias;
+
+
 
